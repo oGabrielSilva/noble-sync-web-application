@@ -1,0 +1,22 @@
+.shake {
+  animation: shake 0.2s ease infinite;
+}
+
+.progress {
+  animation: progress 1s linear infinite;
+}
+
+@keyframes shake {
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes progress {
+  to {
+    rotate: 360deg;
+  }
+}

@@ -1,0 +1,23 @@
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+
+.main {
+  width: 90vw;
+  max-width: 620px;
+  background: var(--primary);
+  padding: 2rem 1rem 0;
+  border-radius: 4px;
+  overflow-x: auto;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

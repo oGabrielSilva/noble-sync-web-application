@@ -1,3 +1,5 @@
+import { MIN_AGE } from '../constants'
+
 export const ptBR = {
   properties: { label: 'Português (Brasil)', key: 'pt-BR' },
   appName: 'Sync',
@@ -21,4 +23,30 @@ export const ptBR = {
   genericError:
     'Oopss! Tivemos um erro inesperado, mas não se preocupe, não deve ter sido foi culpa sua',
   invalidCredentials: 'Oopss... suas informações não estão corretas. Você está cadastrado?',
+  oopss: 'Oopss...',
+  completeProfile: 'Você primeiro precisa adicionar novas informações para o seu perfil',
+  avatarAlt: 'Sua imagem de perfil',
+  remove: 'Remover',
+  name: 'Nome',
+  namePlaceholder: 'Robin',
+  nameSmall: 'Pelo menos 2 caracteres. Esse nome não é visível para outros usuários',
+  nickname: 'Nickname',
+  nicknamePlaceholder: 'Miss All Sunday',
+  nicknameSmall:
+    'Pelo menos 2 caracteres. É por esse nome que você será conhecido dentro da Noble Sync',
+  yearLabel: 'Em que ano você nasceu?',
+  yearSmall: `No mínimo ${MIN_AGE} anos de idade`,
+  male: 'Masculino',
+  female: 'Feminino',
+  other: 'Outro',
+  save: 'Salvar',
+  bio: 'Bio',
+  bioPlaceholder: 'Fale um pouco sobre você',
+  synchronies: 'Sincronias',
+  requests: 'Solicitações',
+  back: 'Voltar',
+  zeroSync: 'Você ainda não tem sincronias',
+  searchNewSync: 'Clique para procurar novas sincronias',
+  syncPlaceholder: 'Escreva uma mensagem convidativa',
+  attachImage: 'Anexar imagem',
 }

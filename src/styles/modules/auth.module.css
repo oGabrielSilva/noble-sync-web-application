@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 90vw;
+  max-width: 640px;
+  padding: 2rem 0;
+}
+
+.welcome {
+  margin: 1rem 0;
+}
+
+.forgot {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.togglePassword {
+  position: absolute;
+  top: calc(26px + 0.5rem);
+  right: 1rem;
+  font-size: 1rem;
+}
+
+.password {
+  padding-right: calc(1rem + 28px);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  width: 49%;
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.button:hover,
+.googleButton:hover {
+  background: var(--secondary);
+  border-color: var(--variant);
+  color: var(--title);
+}
+
+.googleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.googleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  gap: 0.5rem;
+  background: var(--primary);
+  text-align: center;
+  padding: 0.5rem 2rem;
+}

@@ -10,6 +10,8 @@ export declare global {
 
   type I18N = typeof ptBR
 
+  type Gender = 'F' | 'M' | 'O'
+
   interface KeyStringValueString {
     [key: string]: [value: string]
   }

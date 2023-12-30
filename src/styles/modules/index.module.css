@@ -1,74 +1,95 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
-}
-
-.form {
-  width: 90vw;
-  max-width: 640px;
-  padding: 2rem 0;
-}
-
-.welcome {
-  margin: 1rem 0;
-}
-
-.forgot {
-  margin: 0.5rem 0;
   display: flex;
-  justify-content: flex-end;
 }
 
-.togglePassword {
-  position: absolute;
-  top: calc(26px + 0.5rem);
-  right: 1rem;
-  font-size: 1rem;
+.fragments {
+  padding: 1rem 0.5rem;
+  flex: 1;
+  overflow-y: auto;
 }
 
-.password {
-  padding-right: calc(1rem + 28px);
-}
-
-.buttonContainer {
+.avatarContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
 }
 
-.button {
-  width: 49%;
-  background: var(--primary);
-  border: 2px solid var(--secondary);
-  border-radius: 4px;
-  padding: 0.5rem 0;
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 100%;
+  border: 2px solid var(--text);
+  cursor: pointer;
+}
+
+.iconContainer img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.inputPickImage {
+  display: none;
+}
+
+.removeCurrentAvatar {
+  color: var(--link);
+  font-size: small;
+  text-decoration: underline;
+  padding: 0.5rem;
+}
+
+.gendersContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-}
-
-.button:hover,
-.googleButton:hover {
-  background: var(--secondary);
-  border-color: var(--variant);
-  color: var(--title);
-}
-
-.googleContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-.googleButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
   gap: 0.5rem;
-  background: var(--primary);
-  text-align: center;
-  padding: 0.5rem 2rem;
+}
+
+.gendersContainer button {
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+.genderSelected {
+  color: var(--success);
+}
+
+.saveButton {
+  width: 100%;
+  background: var(--success);
+  color: var(--onSuccess);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.saveButton:active,
+.gendersContainer button:active {
+  filter: brightness(0.5) !important;
+  transition: none;
+}
+
+.saveButton:hover {
+  filter: brightness(0.9);
+}
+
+.floatingView {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
 }

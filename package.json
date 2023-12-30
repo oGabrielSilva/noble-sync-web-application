@@ -1,5 +1,7 @@
 {
-  "name": "web",
+  "name": "sync-web-application",
+  "slug": "Sync",
+  "completeName": "Noble Sync",
   "version": "0.1.0",
   "private": true,
   "scripts": {

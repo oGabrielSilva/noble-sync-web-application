@@ -1,0 +1,125 @@
+.synchronies {
+  padding: 1rem 0.5rem;
+  padding-bottom: 0;
+  border-right: 2px solid var(--secondary);
+  flex: 1;
+  max-width: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  user-select: none;
+  padding-bottom: 1rem;
+}
+
+.topBar img {
+  border-radius: 14px;
+}
+
+.requestsNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.floatingViewProfileContainer {
+  height: 100%;
+  background: var(--primary);
+  padding: 1.5rem 1rem 3rem;
+  overflow-y: auto;
+}
+
+.floatingViewProfileBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.floatingViewProfileBack * {
+  color: var(--title);
+  font-size: large;
+}
+
+.synchroniesContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.zeroSynchronies {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.small {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.nSync {
+  width: 100%;
+  height: 100%;
+  max-width: 520px;
+  background: var(--primary);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 0;
+}
+
+.profilePresentation {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profilePresentation img {
+  border-radius: 14px;
+}
+
+.t {
+  width: calc(520px - 3rem - 58px);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(520px - 3rem - 52px - 3em - 0.5rem);
+  display: block;
+  overflow: hidden;
+}
+
+.txt {
+  margin: 1rem 0;
+}
+
+.attachImage {
+  border: 2px solid var(--secondary);
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attachImage:active {
+  filter: brightness(0.5);
+}

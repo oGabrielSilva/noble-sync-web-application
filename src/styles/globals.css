@@ -7,8 +7,11 @@
   --placeholder: #6f6f6f;
   --danger: #ff2020;
   --success: #41db7f;
+  --onSuccess: #050508;
   --warning: #c7cf4b;
   --link: #0089ff;
+  --male: #1151e7;
+  --female: #fd8499;
 }
 
 * {
@@ -21,6 +24,8 @@
   color: var(--text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -48,12 +53,31 @@ button {
   cursor: pointer;
 }
 
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* for IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
 label {
   padding-top: 0.5rem;
   display: block;
   position: relative;
 }
 
+select,
+textarea,
 input {
   background: var(--primary);
   width: 100%;
@@ -95,4 +119,28 @@ a {
 
 .warning {
   color: var(--warning);
+}
+
+.title {
+  color: var(--title);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--variant);
 }
